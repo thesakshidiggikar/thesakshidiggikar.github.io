@@ -1,0 +1,199 @@
+@import url('./layout.css');
+@import url('./components.css');
+@import url('./typography.css');
+
+/* main.css - Core styles for Akira Nakamura SPA Clone */
+
+:root {
+  --bg-gradient: radial-gradient(circle at 50% 50%, #2d1836 0%, #1a1024 100%);
+  --dot-color: rgba(255,255,255,0.07);
+  --header-bg: #23132b;
+  --panel-bg: #23132b;
+  --footer-bg: #23132b;
+  --nav-bg: #23132b;
+  --text-main: #fff;
+  --text-secondary: #bdb6c9;
+  --accent: #a259ff;
+  --status-green: #1ecb6b;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; /* Prevent main page scroll */
+}
+
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: var(--bg-gradient);
+  pointer-events: none;
+}
+.app-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(0deg, var(--dot-color) 0 1px, transparent 1px 40px), repeating-linear-gradient(90deg, var(--dot-color) 0 1px, transparent 1px 40px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.app-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 64px;
+  background: var(--header-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.header-left { display: flex; align-items: center; gap: 16px; }
+.avatar { width: 48px; height: 48px; border-radius: 8px; object-fit: cover; }
+.header-info { display: flex; flex-direction: column; }
+.header-name { font-weight: 700; font-size: 1.1rem; }
+.header-role { color: var(--text-secondary); font-size: 0.95rem; }
+.header-center { display: flex; align-items: center; gap: 8px; }
+.status-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--status-green); display: inline-block; }
+.status-label { color: var(--text-main); font-size: 1rem; }
+.header-right { color: var(--text-secondary); font-size: 1rem; display: flex; align-items: center; gap: 8px; }
+
+.nav-left, .nav-right {
+  position: fixed;
+  top: 80px;
+  bottom: 80px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: none;
+  z-index: 5;
+}
+.nav-left { left: 0; }
+.nav-right { right: 0; }
+
+.nav-btn {
+  background: var(--nav-bg);
+  border: none;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 0;
+  border-radius: 12px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-btn:hover, .nav-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.app-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#panel-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-footer {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  height: 80px;
+  background: var(--footer-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 10;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+.footer-links { display: flex; gap: 16px; }
+.footer-links a { color: var(--text-secondary); text-decoration: none; }
+.footer-links a:hover { color: var(--accent); }
+.footer-social { display: flex; gap: 16px; }
+.social-icon { color: var(--text-secondary); font-size: 1.3rem; text-decoration: none; }
+.social-icon:hover { color: var(--accent); } 
+
+/* Remove conflicting panel rules here. */ 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 24px;
+  padding: 24px 0;
+  justify-items: center;
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #22122b;
+  border-radius: 12px;
+  padding: 18px 8px 10px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: transform 0.12s;
+}
+.skill-card:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(162,89,255,0.18);
+}
+.skill-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.skill-name {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.skills-panel-divider {
+  height: 2px;
+  background: linear-gradient(90deg, #a259ff 0%, #23132b 100%);
+  border-radius: 1px;
+  margin: 24px 0 0 0;
+  width: 100%;
+}
+.skills-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+  background: #20132a;
+  border-radius: 16px;
+  padding: 28px 18px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+} 

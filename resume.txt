@@ -1,0 +1,46 @@
+Shreyash Maurya
+shreyashmaurya3112@gmail.com+91 7666336947in/the-shreyashmaurya
+PROFESSIONAL SUMMARY
+Aspiring Software Developer pursuing an MCA in Artificial Intelligence and Data Science, with a BCA degree (Specialization in Cloud Computing) and top
+academic honors. Strong expertise in cross-platform application development, cloud computing (AWS, Firebase), and AI-driven solutions. Passionate
+about designing efficient, user-centric software while staying updated with the latest industry trends and technologies. Seeking to contribute technical
+expertise and innovation to a dynamic team.
+EXPERIENCE
+Android Developer Intern
+CodTech IT Solutions, India February 2024 -   March 2024
+Built 3+ Flutter apps, including a University Attendance System, improving attendance tracking efficiency by 30%. •
+Optimized app performance by 25% using BLoC & Provider state management and efficient API integration. •
+Reduced debugging time by 30% through structured code practices and Firebase integration. •
+PROJECT
+SkyShift — Elevating your code to Cloud Horizons
+Engineered a one-click cloud deployment system, reducing deployment time by 90%. •
+Automated CI/CD pipeline integration, enabling seamless deployment across AWS, Azure, and GCP. •
+Developed Terraform-based infrastructure automation, minimizing manual configuration errors by 90%. •
+Integrated Jenkins for continuous deployment, improving software release frequency by 5x. •
+RemoteTech — Remote Device Manager
+Designed and developed a centralized IoT-based remote device management system, reducing manual management effort by 40%. •
+Implemented advanced IoT protocols, improving device connectivity and reducing system downtime by 35%. •
+Integrated smart security measures, enhancing cybersecurity resilience by 50% and safeguarding remote operations. •
+Enabled real-time troubleshooting, decreasing issue resolution time by 30% and improving system uptime. •
+WritingMate - Text to Handwriting Converter
+Developed a Python-based script to automate text-to-handwriting conversion, reducing manual effort by 40%. •
+Implemented optimized data structures and algorithms, improving file processing speed by 25%. •
+Designed a customizable font rendering system, enabling users to personalize handwritten outputs. •
+Helped students complete handwritten assignments 10x faster by automating formatting and conversion. •
+EDUCATION
+Master of Computer Applications
+D. Y. Patil International University•Pune, India•2026•9.63/10
+Awarded Emerging Talent Scholarship •
+Bachelor of Computer Applications
+D. Y. Patil International University•Pune, India•2024•9.56/10
+Awarded Gold Medal for academic excellence. •
+Awarded Academic Excellence Scholarship for outstanding performance. •
+CERTIFICATIONS
+AWS Certified Solutions Architect Associate
+SKILLS
+Flutter Development: Cross-platform app development, Clean Architecture, BLoC, Provider
+Cloud & DevOps: AWS (EC2, S3, VPC, RDS, Lambda etc.), Terraform, CloudFormation, Docker, Jenkins
+Machine Learning & AI: TensorFlow, Scikit-Learn, OpenCV, Matplotlib
+Programming Languages: Python, Dart
+Backend & Databases: Flask, MySQL, Firebase Firestore.
+.

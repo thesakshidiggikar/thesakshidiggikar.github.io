@@ -1,0 +1,152 @@
+/* layout.css - Layout styles for Bold Premise Clone */
+
+/* Header & Navbar */
+#site-header {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-links a:hover {
+    color: #ff00cc;
+}
+.availability {
+    background: #e0ffe0;
+    color: #1a7f37;
+    padding: 0.3em 1em;
+    border-radius: 1em;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: linear-gradient(90deg, #fff 60%, #f0f0ff 100%);
+    padding: 4rem 2rem 2rem 2rem;
+}
+.hero-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 4rem 2rem 2rem 2rem;
+    background: #fafaff;
+}
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 4rem 2rem 2rem 2rem;
+    background: #fff;
+}
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem 2rem 2rem;
+    background: #fafaff;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem 2rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 2rem auto 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: inherit;
+}
+.contact-form button {
+    padding: 0.8em;
+    background: #ff00cc;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contact-form button:hover {
+    background: #d100a6;
+}
+
+/* Footer */
+#site-footer {
+    background: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1em;
+    color: #888;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 0.5em;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #ff00cc;
+} 
